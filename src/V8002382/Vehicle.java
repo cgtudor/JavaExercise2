@@ -9,10 +9,14 @@ package V8002382;
  *
  * @author v8002382
  */
-public abstract class Vehicle {
+public abstract class Vehicle implements Killable{
     Faction faction;
     public int points;
     public Vehicle(Faction faction) {
         this.faction = faction;
+    }
+    public int getPoints()
+    {
+        return points;
     }
 }
