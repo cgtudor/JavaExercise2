@@ -9,6 +9,8 @@ package V8002382;
  *
  * @author v8002382
  */
-public class Faction {
-    
+public enum Faction {
+    GDI,
+    NOD,
+    SCRIN
 }
