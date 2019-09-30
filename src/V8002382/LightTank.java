@@ -29,6 +29,7 @@ public class LightTank extends Vehicle{
 
     @Override
     public String kill() {
+        totalPoints += points;
         return "A "+faction+" light tank is destroyed: +"+points+"pts.\n";
     }
     
