@@ -12,6 +12,7 @@ package V8002382;
 public abstract class Soldier implements Killable{
     Faction faction;
     public int points;
+    public static int totalPoints;
     public Soldier(Faction faction) {
         this.faction = faction;
     }

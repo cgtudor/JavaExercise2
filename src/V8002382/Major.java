@@ -29,6 +29,7 @@ public class Major extends Soldier implements Killable{
 
     @Override
     public String kill() {
+        totalPoints += points;
         return "A "+faction+" major explodes into pieces: +"+points+"pts.\n";
     }
     

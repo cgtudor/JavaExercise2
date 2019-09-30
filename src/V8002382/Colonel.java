@@ -29,6 +29,7 @@ public class Colonel extends Soldier implements Killable{
 
     @Override
     public String kill() {
+        totalPoints += points;
         return "A "+faction+" colonel retires, permanently: +"+points+"pts.\n";
     }
     
