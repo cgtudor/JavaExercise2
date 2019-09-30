@@ -13,11 +13,23 @@ public class Cadet extends Soldier implements Killable{
 
     public Cadet(Faction faction) {
         super(faction);
+        switch(faction)
+        {
+            case GDI:
+                points = 25;
+                break;
+            case NOD:
+                points = 20;
+                break;
+            case SCRIN:
+                points = 15;
+                break;
+        }
     }
 
     @Override
     public String kill() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return "A "+faction+" cadet bites the dust: +"+points+"pts.\n";
     }
     
 }
