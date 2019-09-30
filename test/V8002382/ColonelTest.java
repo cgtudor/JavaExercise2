@@ -1,4 +1,4 @@
-package uk.ac.tees.username;
+package V8002382;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
