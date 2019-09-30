@@ -9,6 +9,11 @@ package V8002382;
  *
  * @author v8002382
  */
-public class Soldier {
+public abstract class Soldier {
+    Faction faction;
+    public int points;
+    public Soldier(Faction faction) {
+        this.faction = faction;
+    }
     
 }
