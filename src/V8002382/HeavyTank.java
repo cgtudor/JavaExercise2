@@ -5,23 +5,30 @@
  */
 package V8002382;
 
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author v8002382
  */
 public class HeavyTank extends Vehicle{
     
+    ImageIcon icon;
+    
     public HeavyTank(Faction faction) {
         super(faction);
         switch(faction)
         {
             case GDI:
+                icon = new ImageIcon("gdi-htank");
                 points = 225;
                 break;
             case NOD:
+                icon = new ImageIcon("nod-htank");
                 points = 310;
                 break;
             case SCRIN:
+                icon = new ImageIcon("scrin-htank");
                 points = 270;
                 break;
         }
