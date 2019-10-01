@@ -5,6 +5,8 @@
  */
 package V8002382;
 
+import java.util.Random;
+
 /**
  *
  * @author v8002382
@@ -12,5 +14,9 @@ package V8002382;
 public enum Faction {
     GDI,
     NOD,
-    SCRIN
+    SCRIN;
+    public static Faction getRandomFaction() {
+            Random random = new Random();
+            return values()[random.nextInt(values().length)];
+    }
 }
